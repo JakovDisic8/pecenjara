@@ -8,19 +8,62 @@ body{
                         "products"
                         "contact";
 }
+:root{
+    --redcolor:#bb1a1a;
+    --blackcolor:#302828;
+    
+}
 /* header */
 .divGlavni{
     display: grid;
     grid-area: header;
     width: 100%;
-    padding: 5px;
     grid-template-areas:"ikon location location"
                         "ikon meni meni";
 }
 .logoHeader{
     grid-area: ikon;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.divGlavni ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.divDrugi{
+    grid-area: location;
+    width: 100%;
+    -webkit-clip-path:polygon(100% 0, 100% 38%, 100% 100%, 6% 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 38%, 100% 100%, 6% 100%, 0 0);
+    background-color: var(--redcolor);
+    color: white;
+}
+.divMenu{
+    grid-area: meni;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.divMenu ul li a{
+    text-decoration: none;
+}
+.divMenu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.divMenu ul li{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.divMenu ul li:hover{
+    background-color: rgba(128, 128, 128, 0.178);
+}
+
 
 
 /* slider */
