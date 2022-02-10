@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -11,7 +16,7 @@ body{
 :root{
     --redcolor:#bb1a1a;
     --blackcolor:#302828;
-    
+    --hover:rgba(128, 128, 128, 0.5);
 }
 /* header */
 .divGlavni{
@@ -20,17 +25,25 @@ body{
     width: 100%;
     grid-template-areas:"ikon location location"
                         "ikon meni meni";
+    height: 120px;
+    font-size: 21px;
 }
 .logoHeader{
     grid-area: ikon;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+.logoHeader img{
+    width: 100px;
 }
 .divGlavni ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .divDrugi{
     grid-area: location;
@@ -38,50 +51,129 @@ body{
     -webkit-clip-path:polygon(100% 0, 100% 38%, 100% 100%, 6% 100%, 0 0);
     clip-path: polygon(100% 0, 100% 38%, 100% 100%, 6% 100%, 0 0);
     background-color: var(--redcolor);
+    height: 50px;
+}
+
+.crveniKontakt{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     color: white;
 }
+.crveniKontakt li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crveniKontakt img{
+    width: 21px;
+    margin-right: 8px;
+}
+/* meni */
 .divMenu{
+    height: 50px;
     grid-area: meni;
-    padding: 10px;
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .divMenu ul li a{
     text-decoration: none;
 }
 .divMenu ul{
-    width: 100%;
-    height: 100%;
+    width: 90%;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
 }
 .divMenu ul li{
     width: 100%;
-    height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.divMenu ul li a{
+    padding: 10px;
+    color: var(--blackcolor);
 }
 .divMenu ul li:hover{
-    background-color: rgba(128, 128, 128, 0.178);
+    background-color: var(--hover);
+    cursor: pointer;
+    transition: 0.5s;
 }
+
 
 
 
 /* slider */
+.divTrecina {
+    position:absolute;
+    left: 0;
+    width: 33%;
+    height: 99.5%;
+    background-color:rgba(113, 114, 116, 0.5) ;
+    z-index: 10;
+  }
 .slider{
     grid-area: slider;
-    padding: 5px;
     width: 100%;
 }
 .slides-container{
     height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .slide-image{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    position: absolute;
+    width: 100%;
 }
 .slide-image img{
-    width: 80%;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.prev-btn{
+    left: 0;
+    background-color: #eee;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 400ms;
+    z-index: 20;
+}
+.next-btn{
+    right: 0;
+    background-color: #eee;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 400ms;
+    z-index: 20;
+}
+.next-btn:hover,
+.prev-btn:hover{
+    background-color: var(--hover);
 }
