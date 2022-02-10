@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,25 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!--navBar-->
     <header>
         <div class="divGlavni">
             <div class="logoHeader">
-           <img src="img/Logo_mesara.png" alt="logo">
-        </div>
+                <img src="img/Logo_mesara.png" alt="logo">
+            </div>
             <div class="divDrugi">
                 <ul class="crveniKontakt">
-                    <li><img src="img/iconica_location.png" alt="location"><p>Jumbina 2a</p></li>
-                    <li><img src="img/iconica_mail.png" alt="email"><p>peraperic@gmail.com</p></li>
-                    <li><img src="img/iconica_telefon.png" alt="phone"><p>066/66-66-666</p></li>
+                    <li><img src="img/iconica_location.png" alt="location">
+                        <p>Jumbina 2a</p>
+                    </li>
+                    <li><img src="img/iconica_mail.png" alt="email">
+                        <p>peraperic@gmail.com</p>
+                    </li>
+                    <li><img src="img/iconica_telefon.png" alt="phone">
+                        <p>066/66-66-666</p>
+                    </li>
                 </ul>
             </div>
             <div class="divMenu">
@@ -32,84 +40,114 @@
             </div>
         </div>
     </header>
-  <!-- Carousel -->
-  <!-- slider sa slikama iz foldera -->
-   <div class="slider">
-       <div class="slides-container">
-        <div class="divTrecina"> <!--Samo odraditi background transparency na sivoj-->
-            <h1>Sveze, Sigurno <br> Kvalitetno meso
-            </h1>
-            <p>Kratki tekst</p>
+    <div class="slideshow-container">
+        <div class="divTrecina">
+            <!--Samo odraditi background transparency na sivoj-->
+            <div class="textSlider">
+                <h1>Sveze, sigurno i<br> kvalitetno meso
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dignissimos temporibus nulla nemo
+                    beatae facilis quos laudantium quasi maiores, odio obcaecati nisi fugit excepturi porro atque ipsa
+                    praesentium voluptatem ratione?
+                    Obcaecati molestias magni neque itaque vitae! Repellat vel aspernatur, quae repudiandae, numquam
+                   </p>
             </div>
-           <div class="slide-image"><img src="img/slide1.jpg" alt=""></div>
-      
-        <div class="slide-image"><img src="img/slide2.jpg" alt=""></div>
-   
-        <div class="slide-image"><img src="img/slide1.jpg" alt=""></div>
-    
-       <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
-   
-   <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
-   </div>
+        </div>
+        <div class="mySlides fade">
+
+            <img src="img/slide1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/slide2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="img/slide3.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
 
 
-<!--Treci deo-->
-<div class="divNudimo">
-    <div class="divBox"> <!--Treci box-->
-      <div class="boxSlika">
-          <img src="istockphoto-1214484853-612x612.jpg" alt="" srcset=""> <!--50%-->
-      </div>
-      <div class="boxText">
-          <h5>O nama</h5>
-          <h2>Mi nudimo samo najbolje</h2>
-          <p>100% organsko meso</p>
-          <button>O nama &#8680</button>
-      </div>
+    <!--Treci deo-->
+    <div class="divNudimo">
+        <div class="divBox">
+            <!--Treci box-->
+            <div class="boxSlika">
+                <img src="istockphoto-1214484853-612x612.jpg" alt="" srcset="">
+                <!--50%-->
+            </div>
+            <div class="boxText">
+                <h5>O nama</h5>
+                <h2>Mi nudimo samo najbolje</h2>
+                <p>100% organsko meso</p>
+                <button>O nama &#8680</button>
+            </div>
+        </div>
     </div>
-</div>
-<!--Usluge-->
-<div class="usluge">
-    <h6>Cime se bavimo</h6>
-    <h1>Usluge koje nudimo</h1>
-    <div class="boxUsluge"><h3>Prodaja mesa</h3>
-    <img class="ikoniceUsluge" src="..." alt="" srcset="">
+    <!--Usluge-->
+    <div class="usluge">
+        <h6>Cime se bavimo</h6>
+        <h1>Usluge koje nudimo</h1>
+        <div class="boxUsluge">
+            <h3>Prodaja mesa</h3>
+            <img class="ikoniceUsluge" src="..." alt="" srcset="">
+        </div>
+        <div class="boxUsluge">
+            <h3>Usluzno pecenja<br>rostilja</h3>
+            <img class="ikoniceUsluge" src="..." alt="">
+        </div>
+        <div class="boxUsluge">
+            <h3>Prodaja pecenja</h3>
+            <img class="ikoniceUsluge" src="..." alt="" srcset="">
+        </div>
+        <div class="boxUsluge">
+            <h3>Dostava na vasu adresu</h3>
+            <img class="ikoniceUsluge" src="..." alt="" srcset="">
+        </div>
     </div>
-    <div class="boxUsluge"><h3>Usluzno pecenja<br>rostilja</h3>
-    <img class="ikoniceUsluge" src="..." alt="">
+    <!--Footer-->
+    <div class="footer">
+        <div class="logoFooter">
+            <h5 class="logo">Mesara dobro<br> meze</h5>
+        </div>
+        <div class="footerBox">
+            <img src="..." alt="">
+            <!--Telefon-->
+            <p>Pozovite nas <br> 066/66-66-666</p>
+            <img src="..." alt="">
+            <!--Location-->
+            <p>Adresa <br> Jumbina 2a</p>
+            <img src="..." alt="">
+            <!--Facebook-->
+            <img src="..." alt="">
+            <!--Instagram-->
+        </div>
+        <hr>
+        <!--siva linija 90%-->
+        <div class="dnoFooter">
+            <p>&copy;All rights reserved by Mesara dobro meze. <address>Powered by <a
+                        href=" mailto:jakovdisic8@gmail.com">Jakov Disic</a> </address>
+            </p>
+            <div class="divMenuFooter">
+                <ul>
+                    <li><a href="naslovna.html">Naslovna |</a></li>
+                    <li><a href="proizvodi.html">Proizvodi |</a> </li>
+                    <li><a href="oNama.html">O nama |</a></li>
+                    <li><a href="kontakt.html">Kontakt |</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="boxUsluge"><h3>Prodaja pecenja</h3>
-    <img class="ikoniceUsluge" src="..." alt="" srcset="">
-    </div>
-    <div class="boxUsluge"><h3>Dostava na vasu adresu</h3>
-    <img class="ikoniceUsluge" src="..." alt="" srcset="">
-    </div>
-</div>
-<!--Footer-->
-<div class="footer">
-    <div class="logoFooter">
-    <h5 class="logo">Mesara dobro<br> meze</h5>
-    </div>
-    <div class="footerBox">
-    <img src="..." alt=""> <!--Telefon-->
-    <p>Pozovite nas <br> 066/66-66-666</p>
-    <img src="..." alt=""> <!--Location-->
-    <p>Adresa <br> Jumbina 2a</p>
-    <img src="..." alt=""> <!--Facebook-->
-    <img src="..." alt=""> <!--Instagram-->
-    </div>
-<hr> <!--siva linija 90%-->
-<div class="dnoFooter">
-<p>&copy;All rights reserved by Mesara dobro meze. <address>Powered by <a href=" mailto:uros.novakovic1996@hotmail.com">Uros Novakovic</a> </address></p>
-<div class="divMenuFooter">
-    <ul>
-        <li><a href="naslovna.html">Naslovna |</a></li>
-        <li><a href="proizvodi.html">Proizvodi |</a> </li>
-        <li><a href="oNama.html">O nama |</a></li>
-        <li><a href="kontakt.html">Kontakt |</a></li>
-    </ul>
-</div>
-</div>
-</div>
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
