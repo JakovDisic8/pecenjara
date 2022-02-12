@@ -134,7 +134,7 @@ body {
 .slajder{
     grid-area: slajder;
     width: 100%;
-    height: 850px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,8 +143,8 @@ body {
     width: 100%;
     position: relative;
     margin: auto;
-    height: 700px;
-    border: 5px solid darkgray;
+    height: 100%;
+    
 }
 
 .mySlides {
@@ -159,11 +159,11 @@ body {
 /* text box */
 .divTrecina {
     position: absolute;
-    left: 2%;
-    top: 5%;
+    left: 0%;
+    top: 0%;
     width: 33%;
-    height: 90%;
-    background-color: rgba(224, 224, 224, 0.35);
+    height: 100%;
+    background-color: rgba(113, 114, 116, 0.5);
     z-index: 100;
     display: flex;
     align-items: center;
@@ -172,9 +172,8 @@ body {
     flex-wrap: wrap;
     padding: 5px;
     color: rgb(0, 0, 0);
-    font-weight: bold;
-    /* border: 1px solid var(--borderColor); */
-    box-shadow: inset 0px 0px 17px 6px rgba(0, 0, 0, 0.8);
+   
+   
 
 }
 
@@ -274,6 +273,7 @@ body {
     margin-top: -1%;
     position: relative;
     height: 435px; 
+    z-index: 110;
 }
 .boxSlika{
     padding-left: -100px;
@@ -285,7 +285,7 @@ body {
     left: 25%;
     right: 50%;
     top: -5%;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
 
 }
 .boxText {
@@ -295,7 +295,7 @@ body {
     top: -5%;
     height: 110%;
     left:50%;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 .boxText h6{
 position: absolute;
@@ -344,21 +344,37 @@ left: 16%;
 /* Usluge */
 .usluge{
     grid-area: products;
-    background-image: url(CustomMeso.png);
+    /* background-image: url(img/CustomMeso.png); */
     background-repeat: no-repeat;
     height:80vh;
-    padding: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
-.boxUsluge{
-    background-color: #302828;
-    height: 65%;
-    width: 20%;
-    position: relative;
+.naslovUsluge{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 15%;
+}
+.naseUsluge{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 85%;
+}
+.naseUsluge .boxUsluge{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
 
 }
 .boxUsluge img{
