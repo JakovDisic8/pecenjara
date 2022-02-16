@@ -550,16 +550,6 @@ a {
     display: inline-block;
     color: rgba(192, 192, 192, 0.7);
 }
-
-.divMenuFooter ul {
-    float: right;
-    width: 50%;
-}
-
-.divMenuFooter a {
-    color: rgba(192, 192, 192, 0.7);
-    text-decoration: none;
-}
 .dnoFooter {
     position: absolute;
     bottom: 3%;
@@ -580,17 +570,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.divMenuFooter ul li {
-    border-right: solid 2px rgba(192, 192, 192, 0.7);
-    text-align: center;
-    float: right;
-    width: 25%;
-}
-
-.divMenuFooter ul li:last-child {
-    border: none;
 }
 
 /*------------------------ media queries--------------------------------*/
