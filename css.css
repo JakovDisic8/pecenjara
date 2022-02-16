@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
@@ -96,12 +97,15 @@ body {
     align-items: center;
 }
 
-.divMenu ul li a {
+.navLink {
     text-decoration: none;
+    padding: 10px;
+    color: var(--blackcolor);
+   
 }
 
-.divMenu ul {
-    width: 90%;
+.nav-menu {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +114,8 @@ body {
 }
 
 .divMenu ul li {
-    width: 100%;
+    float: right;
+    width: 25%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -118,20 +123,54 @@ body {
     height: 100%;
 }
 
-.divMenu ul li a {
-    padding: 10px;
-    color: var(--blackcolor);
-}
-
-.divMenu ul li:hover {
+.nav-menu li:hover {
     background-color: var(--hover);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+/* Style the navbar links  */
+#navbar {
+    background-color: #bb1a1a;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: -50px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+    color: white;
+    font-weight: bold;
+    z-index: 199;
+}
+
+#navbar .navSlika {
+    width: 40px;
+    margin: 5px 10px 0px 10px
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+   
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /* slider */
 /* Slideshow container */
-.slajder{
+.slajder {
     grid-area: slajder;
     width: 100%;
     height: 700px;
@@ -139,12 +178,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .slideshow-container {
     width: 100%;
     position: relative;
     margin: auto;
     height: 100%;
-    
+
 }
 
 .mySlides {
@@ -172,15 +212,15 @@ body {
     flex-wrap: wrap;
     padding: 5px;
     color: rgb(0, 0, 0);
-   
-   
+
+
 
 }
 
 .textSlider {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -188,17 +228,13 @@ body {
 }
 
 .textSlider h1 {
-    font-size: 4em;
-
-
+    font-size: 3em;
     width: 100%;
     padding: 5px;
 }
 
 .textSlider p {
-    font-size: 2em;
-
-
+    font-size: 1.4em;
     width: 100%;
     padding: 5px;
 }
@@ -272,13 +308,15 @@ body {
     grid-area: offer;
     margin-top: -1%;
     position: relative;
-    height: 435px; 
+    height: 40vh;
     z-index: 110;
 }
-.boxSlika{
+
+.boxSlika {
     padding-left: -100px;
 }
-.boxSlika img{
+
+.boxSlika img {
     width: 50%;
     height: 110%;
     position: absolute;
@@ -288,65 +326,73 @@ body {
     border-radius: 10px 10px 10px 10px;
 
 }
+
 .boxText {
     background-color: white;
     position: absolute;
     width: 25%;
     top: -5%;
     height: 110%;
-    left:50%;
+    left: 50%;
     border-radius: 0px 10px 10px 0px;
 }
-.boxText h6{
-position: absolute;
-top: 15%;
-left: 10%;
-color: #bb1a1a;
-font-size: 1em;
-}
-.boxText h2{
+
+.boxText h6 {
     position: absolute;
-top: 23%;
-left: 10%;
-font-size: 1.5em;
+    top: 15%;
+    left: 10%;
+    color: #bb1a1a;
+    font-size: 1em;
 }
-.boxp1{
+
+.boxText h2 {
     position: absolute;
-top: 30%;
-left: 10%;
-color: rgba(136, 136, 136, 0.877);
+    top: 23%;
+    left: 10%;
+    font-size: 1.3em;
 }
-.boxp2{
+
+.boxp1 {
     position: absolute;
-top: 55%;
-left: 16%;
+    top: 30%;
+    left: 10%;
+    color: rgba(136, 136, 136, 0.877);
 }
-.boxp3{
+
+.boxp2 {
+    position: absolute;
+    top: 55%;
+    left: 16%;
+}
+
+.boxp3 {
     position: absolute;
     top: 60%;
     left: 16%;
 }
 
-.boxText img{
+.boxText img {
     width: 27px;
 }
-.boximg1{
+
+.boximg1 {
     position: absolute;
     top: -6px;
     left: -30px;
 }
-.boximg2{
+
+.boximg2 {
     position: absolute;
     top: -6px;
     left: -30px;
 }
 
 /* Usluge */
-.usluge{
+.usluge {
     grid-area: products;
     background-image: url(img/CustomMeso.png);
     background-repeat: no-repeat;
-    height:80vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,7 +401,8 @@ left: 16%;
     width: 100%;
     position: relative;
 }
-.naslovUsluge{
+
+.naslovUsluge {
     width: 100%;
     display: flex;
     align-items: center;
@@ -365,46 +412,53 @@ left: 16%;
     position: absolute;
     top: 5%;
 }
-.naseUsluge{
+
+.naseUsluge {
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 80%;
-    
-    
+    height: 60%;
+    padding: 10px;
 }
-.naseUsluge .boxUsluge{
-    background-color:#302828ee;
+
+.naseUsluge .boxUsluge {
+    float: left;
+    width: 23%;
+    margin: 2%;
+    background-color: #302828ee;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10%;
-    padding: 10px;
-    width: 18%;
-    height: 70%;
+    height: 100%;
     border-radius: 10px;
-    
+
 }
-.boxUsluge img{
-    width: 150px;
-    padding: 10px;
+
+.boxUsluge img {
+    max-width: 120px;
 }
-.naslovUsluge h6{
+
+.naslovUsluge h6 {
     font-size: 1.5em;
     color: #bb1a1a;
 }
-.naslovUsluge h1{
+
+.naslovUsluge h1 {
     font-size: 3em;
     font-weight: bold;
+    text-align: center;
 }
-.boxUsluge h3{
+
+.boxUsluge h3 {
     color: white;
     font-size: 1.5em;
     text-align: center;
 }
-.boxUsluge p{
+
+.boxUsluge p {
     padding: 10px;
     text-align: center;
     color: white;
@@ -412,22 +466,25 @@ left: 16%;
 
 /* footer */
 
-.footer img{
+.footer img {
     width: 27px;
 }
+
 .footer {
     background-color: #302828;
     width: 100%;
-    height:50vh;
+    height: 50vh;
     position: relative;
     grid-area: contact;
 }
-.logoFooter img{
+
+.logoFooter img {
     width: 10%;
     position: absolute;
     left: 5%;
     top: 10%;
 }
+
 .footerBox {
     width: 25%;
     background-color: #bb1a1a;
@@ -441,23 +498,37 @@ left: 16%;
     flex-direction: column;
     border-radius: 10px;
 }
-.drugaC{ 
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-size: 1.2em;
-}
-.telefonFooter img, .locationFooter img{
-margin-right: 5%;
-width: 7%;
+
+.drugaC {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
 }
 
-.socialFooter img{
+.telefonFooter img,
+.locationFooter img {
+    margin-right: 5%;
+    width: 7%;
+}
+
+.socialFooter img {
     margin: 20px;
 }
-
+.mapa{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 400px;
+    height:300px;
+    
+}
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
 
 .linija {
     border-top: silver solid;
@@ -467,60 +538,97 @@ width: 7%;
     bottom: 12%;
 
 }
+
 .dnoFooter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.dnoFooter p, a{
+
+.dnoFooter p,
+a {
     display: inline-block;
     color: rgba(192, 192, 192, 0.7);
 }
-.divMenuFooter ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
+
+.divMenuFooter ul {
+    float: right;
+    width: 50%;
 }
 
-.divMenuFooter a{
+.divMenuFooter a {
     color: rgba(192, 192, 192, 0.7);
-font-size: 1.2em;
-text-decoration: none;
+    text-decoration: none;
 }
-.dnoFooter{
+.dnoFooter {
     position: absolute;
     bottom: 3%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
-.divMenuFooter{
+
+.divMenuFooter {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.rights{
+
+.rights {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .divMenuFooter ul li {
-    border-right:solid 2px rgba(192, 192, 192, 0.7);
-    padding: 0 6.4%;
+    border-right: solid 2px rgba(192, 192, 192, 0.7);
+    text-align: center;
+    float: right;
+    width: 25%;
 }
-.divMenuFooter li:last-child{
+
+.divMenuFooter ul li:last-child {
     border: none;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+/*------------------------ media queries--------------------------------*/
 
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
+
+/* desktop */
+@media screen and (max-width: 1200px) {
+
+
+
+
 }
+
+
+/* small screens */
+@media screen and (max-width: 1024px) {
+
+
+
+
+}
+
+
+
+
+/* tablets */
+@media screen and (max-width: 768px) {
+
+
+
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+
+
+
+
+
+}
+
+

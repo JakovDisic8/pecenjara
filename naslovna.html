@@ -31,118 +31,154 @@
                 </ul>
             </div>
             <div class="divMenu">
+                <ul class="nav-menu">
+                    <li><a href="#naslovna" class="navLink"> Naslovna</a></li>
+                    <li><a href="#usluge" class="navLink">Proizvodi</a> </li>
+                    <li><a href="#proizvodi" class="navLink">O nama</a></li>
+                    <li><a href="#footer" class="navLink">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <!--Nav bar scroll-->
+    <div id="navbar">
+        <img class="navSlika" src="img/Logo_mesara.png" alt="" srcset="">
+        <a href="naslovna.html">Naslovna</a>
+        <a href="#usluge">Proizvodi</a>
+        <a href="#usluge">O nama</a>
+        <a href="#footer">Kontakt</a>
+    </div>
+    <div class="slajder" id="naslovna">
+        <div class="slideshow-container">
+            <div class="divTrecina">
+                <!--Samo odraditi background transparency na sivoj-->
+                <div class="textSlider">
+                    <h1>Sveze, sigurno i<br> kvalitetno meso
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dignissimos temporibus nulla
+                        nemo
+                        beatae facilis quos laudantium quasi maiores, odio obcaecati nisi fugit excepturi porro atque
+                        ipsa
+                        praesentium voluptatem ratione?
+                        Obcaecati molestias magni neque itaque vitae! Repellat vel aspernatur, quae repudiandae, numquam
+                    </p>
+                </div>
+            </div>
+            <div class="mySlides fade"><img src="img/slide1.jpg"></div>
+            <div class="mySlides fade"><img src="img/slide2.jpg"></div>
+            <div class="mySlides fade"><img src="img/slide3.jpg"></div>
+            <div class="mySlides fade"><img src="img/slide4.jpg"></div>
+            <div class="mySlides fade"><img src="img/slide5.jpg"></div>
+            <div class="mySlides fade"><img src="img/slide6.jpg"></div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+
+    <!--Treci deo-->
+    <div class="divNudimo" id="proizvodi">
+        <div class="divBox">
+            <!--Treci box-->
+            <div class="boxSlika">
+                <img src="img/slide2.jpg" alt="" srcset="">
+                <!--50%-->
+            </div>
+            <div class="boxText">
+                <h6>O nama</h6>
+                <h2>Mi nudimo samo najbolje</h2>
+                <p class="boxp1">Dodjite i uverite se sami</p>
+                <p class="boxp2"><img class="boximg1" src="img/1398912_circle_correct_mark_success_tick_icon.png"
+                        alt="">100% Kvalitetno meso</p>
+                <p class="boxp3"><img class="boximg2" src="img/1398912_circle_correct_mark_success_tick_icon.png"
+                        alt=""> Direktno placanje pri dostavi</p>
+            </div>
+        </div>
+    </div>
+    <!--Usluge-->
+    <div class="usluge" id="usluge">
+        <div class="naslovUsluge">
+            <h6>Cime se bavimo</h6>
+            <h1>Usluge koje nudimo</h1>
+        </div>
+        <div class="naseUsluge">
+            <div class="boxUsluge">
+                <h3>Prodaja mesa</h3>
+                <img class="ikoniceUsluge" src="img/iconica_meso.png" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores
+                    odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos.
+                    Repellendus, veritatis quia?</p>
+            </div>
+            <div class="boxUsluge">
+                <h3>Usluzno pecenja<br>rostilja</h3>
+                <img class="ikoniceUsluge" src="img/iconica_rostilj.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores
+                    odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos.
+                    Repellendus, veritatis quia?</p>
+            </div>
+            <div class="boxUsluge">
+                <h3>Prodaja pecenja</h3>
+                <img class="ikoniceUsluge" src="img/iconica_prase.png" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores
+                    odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos.
+                    Repellendus, veritatis quia?</p>
+            </div>
+            <div class="boxUsluge">
+                <h3>Dostava <br> na vasu adresu</h3>
+                <img class="ikoniceUsluge" src="img/iconica_delivery.png" alt="" srcset="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores
+                    odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos.
+                    Repellendus, veritatis quia?</p>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer" id="footer">
+        <div class="logoFooter">
+            <img src="img/Logo_mesara.png" alt="">
+        </div>
+        <div class="footerBox">
+            <div class="telefonFooter drugaC">
+                <img src="img/iconica_telefon.png" alt="">
+                <!--Telefon-->
+                <p>Pozovite nas <br>061/2016-444</p>
+            </div>
+            <div class="locationFooter drugaC">
+                <img src="img/iconica_location.png" alt="">
+                <!--Location-->
+                <p>Adresa <br> Jumbina 2a</p>
+            </div>
+            <div class="socialFooter drugaC">
+                <a href=""><img src="img/iconica_facebook.png" alt="">
+                    <!--Facebook--></a>
+                <a href=""><img src="img/iconica_instagram.png" alt="">
+                    <!--Instagram-->
+            </div></a>
+        </div>
+        <div class="mapa"><iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d354.3222308077153!2d20.604664559259742!3d44.728226582594566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a76256c7dda79%3A0x96b800d3bfb15e1c!2z0IjRg9C80LHQuNC90LAgMiwg0JHQvtC70LXRhw!5e0!3m2!1ssr!2srs!4v1645037510823!5m2!1ssr!2srs"
+            allowfullscreen="" loading="lazy"></iframe></div>
+        
+        <div class="linija">
+            <!--siva linija 90%-->
+        </div>
+        <div class="dnoFooter">
+            <div class="rights">
+                <p>&copy;All rights reserved by Mesara dobro meze.<a href=" mailto:jakovdisic8@gmail.com">Jakov
+                        Disic</a></p>
+            </div>
+            <div class="divMenuFooter">
                 <ul>
-                    <li><a href="naslovna.html"> Naslovna</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a> </li>
+                    <li><a href="naslovna.html">Naslovna</a></li>
+                    <li><a href="proizvodi.html">Proizvodi</a></li>
                     <li><a href="oNama.html">O nama</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
-    </header>
-    <div class="slajder">
-    <div class="slideshow-container">
-        <div class="divTrecina">
-            <!--Samo odraditi background transparency na sivoj-->
-            <div class="textSlider">
-                <h1>Sveze, sigurno i<br> kvalitetno meso
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dignissimos temporibus nulla nemo
-                    beatae facilis quos laudantium quasi maiores, odio obcaecati nisi fugit excepturi porro atque ipsa
-                    praesentium voluptatem ratione?
-                    Obcaecati molestias magni neque itaque vitae! Repellat vel aspernatur, quae repudiandae, numquam
-                   </p>
-            </div>
-        </div>
-        <div class="mySlides fade"><img src="img/slide1.jpg" ></div>
-        <div class="mySlides fade"><img src="img/slide2.jpg" ></div>
-        <div class="mySlides fade"><img src="img/slide3.jpg" ></div>
-        <div class="mySlides fade"><img src="img/slide4.jpg" ></div>
-        <div class="mySlides fade"><img src="img/slide5.jpg" ></div>
-        <div class="mySlides fade"><img src="img/slide6.jpg" ></div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-</div>
-
-    <!--Treci deo-->
-<div class="divNudimo">
-    <div class="divBox"> <!--Treci box-->
-      <div class="boxSlika">
-          <img src="img/slide2.jpg" alt="" srcset=""> <!--50%-->
-      </div>
-      <div class="boxText">
-          <h6>O nama</h6>
-          <h2>Mi nudimo samo najbolje</h2>
-          <p class="boxp1">Dodjite i uverite se sami</p>
-          <p class="boxp2"><img class="boximg1" src="img/1398912_circle_correct_mark_success_tick_icon.png" alt="">100% Kvalitetno meso</p>
-          <p class="boxp3"><img class="boximg2" src="img/1398912_circle_correct_mark_success_tick_icon.png" alt=""> Direktno placanje pri dostavi</p>
-          
-      </div>
-    </div>
-</div>
-<!--Usluge-->
-<div class="usluge">
-    <div class="naslovUsluge">
-    <h6>Cime se bavimo</h6>
-    <h1>Usluge koje nudimo</h1>
-    </div>
-    <div class="naseUsluge">
-    <div class="boxUsluge">
-        <h3>Prodaja mesa</h3>
-    <img class="ikoniceUsluge" src="img/iconica_meso.png" alt="" srcset="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos. Repellendus, veritatis quia?</p>
-    </div>
-    <div class="boxUsluge">
-        <h3>Usluzno pecenja<br>rostilja</h3>
-    <img class="ikoniceUsluge" src="img/iconica_rostilj.png" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos. Repellendus, veritatis quia?</p>
-    </div>
-    <div class="boxUsluge">
-        <h3>Prodaja pecenja</h3>
-    <img class="ikoniceUsluge" src="img/iconica_prase.png" alt="" srcset="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos. Repellendus, veritatis quia?</p>
-    </div>
-    <div class="boxUsluge">
-        <h3>Dostava <br> na vasu adresu</h3>
-    <img class="ikoniceUsluge" src="img/iconica_delivery.png" alt="" srcset="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil, nobis officia dicta maiores odio incidunt veniam neque soluta repellat explicabo vitae quis laborum suscipit omnis quos. Repellendus, veritatis quia?</p>
-    </div>
-</div>
-</div>
-<!--Footer-->
-<div class="footer">
-    <div class="logoFooter">
-    <img src="img/Logo_mesara.png" alt="">
-    </div>
-    <div class="footerBox">
-    <div class="telefonFooter drugaC">
-    <img src="img/iconica_telefon.png" alt=""> <!--Telefon-->
-    <p>Pozovite nas <br>061/2016-444</p></div>
-    <div class="locationFooter drugaC">
-        <img src="img/iconica_location.png" alt=""> <!--Location-->
-    <p>Adresa <br> Jumbina 2a</p></div>
-   <div class="socialFooter drugaC"> 
-      <a href=""><img src="img/iconica_facebook.png" alt=""> <!--Facebook--></a> 
-    <a href=""><img src="img/iconica_instagram.png" alt=""> <!--Instagram--></div></a>
-    </div>
-<div class="linija"> <!--siva linija 90%--></div>
-<div class="dnoFooter">
- <div class="rights">  
-<p>&copy;All rights reserved by Mesara dobro meze.<a href=" mailto:jakovdisic8@gmail.com">Jakov Disic</a></p> 
-    </div>
-<div class="divMenuFooter">
-    <ul>
-        <li><a href="naslovna.html">Naslovna</a></li>
-        <li><a href="proizvodi.html">Proizvodi</a></li>
-        <li><a href="oNama.html">O nama</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-</div>
-    </div>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
