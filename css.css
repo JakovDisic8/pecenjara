@@ -115,14 +115,17 @@ body {
 
 .divMenu ul li {
     float: right;
-    width: 25%;
+    width: 20%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition: 1s;
 }
-
+.divMenu ul li a{
+    width: 100%;
+}
 .nav-menu li:hover {
     background-color: var(--hover);
     cursor: pointer;
@@ -149,7 +152,8 @@ body {
 
 #navbar .navSlika {
     width: 40px;
-    margin: 5px 10px 0px 10px
+    margin-left: 40px;
+    margin-top: 5px;
 }
 
 /* Style the navbar links */
@@ -164,8 +168,8 @@ body {
 }
 
 #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--blackcolor);
+    color: white;
 }
 
 /* slider */
@@ -308,7 +312,7 @@ body {
     grid-area: offer;
     margin-top: -1%;
     position: relative;
-    height: 40vh;
+    height: 50vh;
     z-index: 110;
 }
 
@@ -342,14 +346,14 @@ body {
     top: 15%;
     left: 10%;
     color: #bb1a1a;
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 .boxText h2 {
     position: absolute;
     top: 23%;
     left: 10%;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 .boxp1 {
@@ -357,18 +361,21 @@ body {
     top: 30%;
     left: 10%;
     color: rgba(136, 136, 136, 0.877);
+    font-size: 1.2em;
 }
 
 .boxp2 {
     position: absolute;
     top: 55%;
     left: 16%;
+    font-size: 1.2em;
 }
 
 .boxp3 {
     position: absolute;
     top: 60%;
     left: 16%;
+    font-size: 1.2em;
 }
 
 .boxText img {
@@ -392,14 +399,12 @@ body {
     grid-area: products;
     background-image: url(img/CustomMeso.png);
     background-repeat: no-repeat;
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    position: relative;
 }
 
 .naslovUsluge {
@@ -408,54 +413,48 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 20%;
-    position: absolute;
-    top: 5%;
+    margin-top: 80px;
+    margin-bottom: -60px;
 }
-
+.naslovUsluge h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
 .naseUsluge {
     margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
-    height: 60%;
-    padding: 10px;
+    margin-bottom: 80px;
 }
 
-.naseUsluge .boxUsluge {
-    float: left;
-    width: 23%;
-    margin: 2%;
+.boxUsluge {
+    width: 20%;
+    height: 420px;
     background-color: #302828ee;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
     border-radius: 10px;
-
+   
 }
 
 .boxUsluge img {
     max-width: 120px;
+    margin-bottom: 10px;
 }
 
-.naslovUsluge h6 {
-    font-size: 1.5em;
-    color: #bb1a1a;
-}
-
-.naslovUsluge h1 {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-}
 
 .boxUsluge h3 {
     color: white;
     font-size: 1.5em;
     text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 .boxUsluge p {
@@ -514,20 +513,16 @@ body {
     width: 7%;
 }
 
+
 .socialFooter img {
     margin: 20px;
 }
-.mapa{
-    position: absolute;
-    top: 40px;
-    right: 80px;
-    width: 400px;
-    height:300px;
-    
+.locationFooter p a{
+    text-decoration: none;
+    color: white;
 }
-.mapa iframe{
-    width: 100%;
-    height: 100%;
+.locationFooter p a:hover{
+    text-decoration: underline;
 }
 
 .linija {
