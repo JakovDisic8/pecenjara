@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -24,7 +25,7 @@ body {
     --blackcolor: #302828;
     --hover: rgba(128, 128, 128, 0.6);
     --borderColor: rgba(131, 131, 131, 0.3);
-
+    --blackopacity:#302828ee;
 }
 
 /* header */
@@ -34,7 +35,7 @@ body {
     width: 100%;
     grid-template-areas: "ikon location location"
         "ikon meni meni";
-    height: 120px;
+
     font-size: 21px;
 }
 
@@ -178,7 +179,7 @@ body {
 .slajder {
     grid-area: slajder;
     width: 100%;
-    height: 700px;
+    height: 89vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,90 +300,73 @@ body {
 .divNudimo {
     background-color: #302828;
     grid-area: offer;
-    margin-top: -1%;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    height: 50vh;
+}
+.divBox{
+    position: absolute;
+    top: -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    width:60%;
+    height: 100%;
     z-index: 110;
 }
-
 .boxSlika {
-    padding-left: -100px;
-}
-
-.boxSlika img {
     width: 50%;
-    height: 110%;
-    position: absolute;
-    left: 25%;
-    right: 50%;
-    top: -5%;
-    border-radius: 10px 10px 10px 10px;
-
+    height: 100%;
+    border-radius: 10px;
+}
+.boxSlika img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.boxText {
-    background-color: white;
-    position: absolute;
-    width: 25%;
-    top: -5%;
-    height: 110%;
-    left: 50%;
-    border-radius: 0px 10px 10px 0px;
-}
+.boxText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
 
-.boxText h6 {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    color: #bb1a1a;
-    font-size: 1.4em;
 }
-
-.boxText h2 {
-    position: absolute;
-    top: 23%;
-    left: 10%;
+.boxText h6{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6em;
+}
+.boxText h2{
+    width: 100%;
+    text-align: left;
     font-size: 2em;
 }
-
-.boxp1 {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: rgba(136, 136, 136, 0.877);
-    font-size: 1.2em;
+.boxp1{
+    width: 100%;
+    text-align: left;
+    font-size: 1.4em;
 }
-
-.boxp2 {
-    position: absolute;
-    top: 55%;
-    left: 16%;
-    font-size: 1.2em;
+.boxp2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2em;
 }
-
-.boxp3 {
-    position: absolute;
-    top: 60%;
-    left: 16%;
-    font-size: 1.2em;
-}
-
 .boxText img {
     width: 27px;
 }
-
-.boximg1 {
-    position: absolute;
-    top: -6px;
-    left: -30px;
-}
-
-.boximg2 {
-    position: absolute;
-    top: -6px;
-    left: -30px;
-}
-
 /* Usluge */
 .usluge {
     grid-area: products;
@@ -430,7 +414,8 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
-   
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.6); 
+    box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.8);
 }
 
 .boxUsluge img {

@@ -1,3 +1,5 @@
+
+
 // img slider main page
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -35,3 +37,4 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
