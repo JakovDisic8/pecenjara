@@ -27,8 +27,8 @@ body {
     --borderColor: rgba(131, 131, 131, 0.3);
     --blackopacity:#302828ee;
 }
-
-/* header */
+ /* -----------------NASLOVNA------------------ */
+/* header (naslovna i proizvodi stranica) */
 .divGlavni {
     display: grid;
     grid-area: header;
@@ -148,7 +148,7 @@ body {
     /* Transition effect when sliding down (and up) */
     color: white;
     font-weight: bold;
-    z-index: 199;
+    z-index: 200;
 }
 
 #navbar .navSlika {
@@ -541,6 +541,70 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* --------------------PROIZVODI------------------- */
+
+.proizvodi{
+    width: 100%;
+    display: grid;
+    grid-template-areas:"naslov"
+                        "listaProizvoda";
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.itemsNaslov{
+    width: 100%;
+    grid-area: naslov;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.itemsNaslov h4{
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.items-list{
+    grid-area: listaProizvoda;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.lista{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.naslovListe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.naslovListe h6{
+    font-size: 2em;
+}
+
+.elementListe{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.elementListe:last-child{
+    border: none;
 }
 
 /*------------------------ media queries--------------------------------*/
