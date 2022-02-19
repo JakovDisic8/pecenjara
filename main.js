@@ -1,5 +1,3 @@
-
-
 // img slider main page
 var slideIndex = 1;
 showSlides(slideIndex);
