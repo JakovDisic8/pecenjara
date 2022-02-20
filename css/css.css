@@ -148,7 +148,7 @@ body {
     /* Transition effect when sliding down (and up) */
     color: white;
     font-weight: bold;
-    z-index: 200;
+    z-index: 1000;
 }
 
 #navbar .navSlika {
@@ -370,7 +370,7 @@ body {
 /* Usluge */
 .usluge {
     grid-area: products;
-    background-image: url(img/CustomMeso.png);
+    background-image: url(../img/CustomMeso.png);
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
