@@ -301,7 +301,7 @@ function ispisProizvodaMesanoMeso() {
       selekcija: `mesano`,
       imeProizvoda: `Mešano mleveno meso`,
       cenaProizvoda: 740,
-    },
+    }
   ];
 }
 

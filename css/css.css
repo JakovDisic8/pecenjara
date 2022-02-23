@@ -1,8 +1,13 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../font/BAHNSCHRIFT\ 8.TTF);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 ul {
@@ -594,7 +599,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 30px;
 }
 .naslovListe h6{
     font-size: 2em;
@@ -608,8 +613,15 @@ a {
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
+.elementNaziv,.elementCena{
+    font-size: 1.3em;
+    font-weight: 550;
+}
 .elementListe:last-child{
     border: none;
+}
+.paddingList{
+    padding: 20px;
 }
 #listaSvinjetina{
     display: flex;
