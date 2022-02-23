@@ -413,12 +413,12 @@ body {
 .boxUsluge {
     width: 20%;
     height: 420px;
-    background-color: #302828ee;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
+    background-color: #302828ee;
     -webkit-box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.6); 
     box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.8);
 }
@@ -566,11 +566,21 @@ a {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 20px;
+    
 }
 .itemsNaslov h4{
     font-size: 4em;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5); 
+box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5);
+border:#bb1a1a 1px solid;
 }
 .items-list{
     grid-area: listaProizvoda;
@@ -588,10 +598,12 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid red;
-    margin: 10px;
+    margin-bottom: 40px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.7); 
+box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.7);
+border:#bb1a1a 1px solid;
 }
 
 .naslovListe{
@@ -603,6 +615,7 @@ a {
 }
 .naslovListe h6{
     font-size: 2em;
+    
 }
 
 .elementListe{
@@ -616,6 +629,7 @@ a {
 .elementNaziv,.elementCena{
     font-size: 1.3em;
     font-weight: 550;
+    
 }
 .elementListe:last-child{
     border: none;
