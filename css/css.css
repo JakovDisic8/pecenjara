@@ -549,8 +549,10 @@ a {
     display: grid;
     grid-template-areas:"naslov"
                         "listaProizvoda";
-    padding: 10px;
-    margin-bottom: 40px;
+    padding: 50px;
+   
+    background-image: url(../img/CustomMeso.png);
+    background-repeat: repeat;
 }
 .itemsNaslov{
     width: 100%;
@@ -572,6 +574,8 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    
 }
 .lista{
     width: 35%;
@@ -579,9 +583,10 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid red;
     margin: 10px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .naslovListe{
@@ -605,6 +610,48 @@ a {
 }
 .elementListe:last-child{
     border: none;
+}
+#listaSvinjetina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#listaJunetina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#listaPiletina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#listaMesano{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#listaPecenje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#listaLepinje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 /*------------------------ media queries--------------------------------*/
