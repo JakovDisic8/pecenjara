@@ -35,20 +35,29 @@ function scrollFunction() {
   }
 }
 
-// btn menu
+// btn menu hamburger
 
-const openMenuBtn=document.getElementById(`openBtnMenu`);
-openMenuBtn.addEventListener(`click`,openNav());
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-const closeMenuBtn=document.getElementById(`closeBtnMenu`);
-closeMenuBtn.addEventListener(`click`,closeNav())
-
-/* Open */
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
+hamburger.addEventListener("click", toggleMenu);
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
