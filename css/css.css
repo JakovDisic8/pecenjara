@@ -40,7 +40,6 @@ body {
     width: 100%;
     grid-template-areas: "ikon location location"
         "ikon meni meni";
-
     font-size: 21px;
 }
 
@@ -250,17 +249,20 @@ body {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 25%;
+    height: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    padding: 26px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 32px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    z-index: 1000;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Position the "next button" to the right */
@@ -347,20 +349,19 @@ body {
     padding-left: 5%;
 
 }
-.boxText h6{
-    width: 100%;
-    text-align: left;
-    font-size: 1.6em;
-}
+
 .boxText h2{
     width: 100%;
     text-align: left;
-    font-size: 2em;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 .boxp1{
     width: 100%;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--redcolor);
 }
 .boxp2{
     width: 100%;
@@ -368,6 +369,7 @@ body {
     align-items: center;
     justify-content: left;
     font-size: 2em;
+    margin-bottom: 10px;
 }
 .boxText img {
     width: 27px;
@@ -376,7 +378,8 @@ body {
 .usluge {
     grid-area: products;
     background-image: url(../img/CustomMeso.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -398,7 +401,9 @@ body {
     font-size: 4em;
     font-weight: bold;
     text-align: center;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 .naseUsluge {
     margin-top: 10%;
@@ -412,7 +417,7 @@ body {
 
 .boxUsluge {
     width: 20%;
-    height: 420px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,6 +426,7 @@ body {
     background-color: #302828ee;
     -webkit-box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.6); 
     box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.8);
+    transition: 1s;
 }
 
 .boxUsluge img {
@@ -494,18 +500,33 @@ body {
     width: 7%;
 }
 
+.socialFooter{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-.socialFooter img {
-    margin: 20px;
+    
 }
-.locationFooter p a{
+.socialFooter img {
+    width:40px;
+
+}
+
+.drugaC p a{
     text-decoration: none;
     color: white;
 }
-.locationFooter p a:hover{
+.drugaC p a:hover{
     text-decoration: underline;
 }
+.socLink:hover{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    
 
+}
 .linija {
     border-top: silver solid;
     width: 90%;
@@ -579,8 +600,8 @@ a {
     padding: 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5); 
-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5);
-border:#bb1a1a 1px solid;
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5);
+    border:#bb1a1a 1px solid;
 }
 .items-list{
     grid-area: listaProizvoda;
@@ -683,34 +704,115 @@ border:#bb1a1a 1px solid;
 /*------------------------ media queries--------------------------------*/
 
 
-/* desktop */
-@media screen and (max-width: 1200px) {
+/* desktop 4k */
+@media screen and (max-width: 2560px) {
+
+    .divGlavni{
+        font-size: 29px;
+    }
+    .boxText h2{
+        font-size: 4em;
+    }
+    .boxp1{
+        font-size: 3em;
+    }
+    .boxp2{
+        font-size: 2.5em;
+    }
+    .naslovUsluge h2{
+        font-size: 6em;
+    }
+    .boxUsluge h3{
+        font-size: 3em;
+        
+    }
+    .boxUsluge p{
+        font-size: 2em;
+    }
+
+    .drugaC{
+        font-size: 2em;
+    }
+    .socialFooter img {
+        width:50px;
+    
+    }
+
+}
 
 
+/* laptop L*/
+@media screen and (max-width: 1440px) {
+
+    .divGlavni{
+        font-size: 21px;
+    }
+    .boxText h2{
+        font-size: 3em;
+    }
+    .boxp1{
+        font-size: 2em;
+    }
+    .boxp2{
+        font-size: 1.5em;
+    }
+    .naslovUsluge h2{
+        font-size: 4em;
+    }
+    .boxUsluge h3{
+        font-size: 2em;
+        
+    }
+    .boxUsluge p{
+        font-size: 1.4em;
+    }
+
+    .drugaC{
+        font-size: 1.2em;
+    }
+    .socialFooter img {
+        width:40px;
+    
+    }
 
 
 }
 
 
-/* small screens */
+
+
+/* laptop */
 @media screen and (max-width: 1024px) {
 
 
 
-
 }
-
-
-
-
-/* tablets */
+/* tablet */
 @media screen and (max-width: 768px) {
 
 
 
+
+
 }
-/* mobile */
-@media screen and (max-width: 480px) {
+/* mobile L */
+@media screen and (max-width: 425px) {
+
+
+
+
+
+}
+/* mobile M */
+@media screen and (max-width: 375px) {
+
+
+
+
+
+}
+/* mobile S */
+@media screen and (max-width: 320px) {
 
 
 
