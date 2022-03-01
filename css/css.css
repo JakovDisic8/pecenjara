@@ -702,7 +702,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.4em;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.5);
@@ -722,14 +722,14 @@ a {
 }
 
 .lista {
-    width: 35%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.7);
     border: #bb1a1a 1px solid;
@@ -835,8 +835,13 @@ a {
         font-size: 1em;
         text-align: center;
     }
-
-
+    /* proizvodi stranica */
+    .itemsNaslov{
+        font-size: 0.7em;
+    }
+    .lista{
+        width: 60%;
+    }
 }
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -874,6 +879,12 @@ a {
         font-size: 1em;
         text-align: center;
     }
+    .itemsNaslov{
+        font-size: 0.5em;
+    }
+    .lista{
+        width: 70%;
+    }
 }
 
 /* tablet */
@@ -889,6 +900,12 @@ a {
     }
     .rights p{
         text-align: center;
+    }
+    .itemsNaslov{
+        font-size: 0.6em;
+    }
+    .lista{
+        width: 80%;
     }
 
 }
@@ -955,6 +972,27 @@ a {
     }
     .dnoFooter{
         margin: 10px;
+    }
+    .itemsNaslov{
+        font-size: 0.5em;
+    }
+    .lista{
+        width: 100%;
+    }
+    .elementNaziv{
+        font-size: 1em;
+    }
+    .elementCena{
+        font-size: 1em;
+    }
+    .naslovListe{
+        text-align: center;
+    }
+    .drugaC p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
