@@ -94,7 +94,7 @@ body {
     text-decoration: none;
     color: white;
 }
-
+  
 .crveniKontakt li a:hover {
     text-decoration: underline;
 }
@@ -155,15 +155,10 @@ body {
 /* Style the navbar links  */
 #navbar {
     background-color: #bb1a1a;
-    /* Black background color */
     position: fixed;
-    /* Make it stick/fixed */
     top: -70px;
-    /* Hide the navbar 50 px outside of the top view */
-    width: 100%;
-    /* Full width */
+     width: 100%;
     transition: top 0.3s;
-    /* Transition effect when sliding down (and up) */
     color: white;
     font-weight: bold;
     z-index: 1000;
@@ -235,9 +230,10 @@ body {
         width: 100%;
         text-align: center;
     }
+    /* UBACITI U CSS POSLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   .showMenu {
     transform: translateY(0);
-  }
+  } 
   .menuIcon{
       width: 60px;
       height: 30px;
