@@ -19,11 +19,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    grid-template-areas: "header"
-        "slider"
-        "offer"
-        "products"
-        "contact";
+    grid-template-areas: "header" "slider" "offer" "products" "contact";
 }
 
 :root {
@@ -34,14 +30,17 @@ body {
     --blackopacity: #302828ee;
 }
 
+
 /* -----------------NASLOVNA------------------ */
+
+
 /* header (naslovna i proizvodi stranica) */
+
 .divGlavni {
     display: grid;
     grid-area: header;
     width: 100%;
-    grid-template-areas: "ikon location location"
-        "ikon meni meni";
+    grid-template-areas: "ikon location location" "ikon meni meni";
     font-size: 21px;
 }
 
@@ -87,14 +86,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .crveniKontakt li a {
     text-decoration: none;
     color: white;
 }
-  
+
 .crveniKontakt li a:hover {
     text-decoration: underline;
 }
@@ -104,7 +102,9 @@ body {
     margin-right: 8px;
 }
 
+
 /* meni */
+
 .divMenu {
     height: 50px;
     grid-area: meni;
@@ -118,7 +118,6 @@ body {
     text-decoration: none;
     padding: 10px;
     color: var(--blackcolor);
-
 }
 
 .nav-menu {
@@ -152,12 +151,14 @@ body {
     border-radius: 10px;
 }
 
+
 /* Style the navbar links  */
+
 #navbar {
     background-color: #bb1a1a;
     position: fixed;
     top: -70px;
-     width: 100%;
+    width: 100%;
     transition: top 0.3s;
     color: white;
     font-weight: bold;
@@ -170,7 +171,9 @@ body {
     margin-top: 2px;
 }
 
+
 /* Style the navbar links */
+
 #navbar a {
     float: right;
     display: block;
@@ -188,12 +191,15 @@ body {
     height: 100%;
 }
 
+
 /* phone menu */
-#hamburgerMenu{
+
+#hamburgerMenu {
     display: none;
     width: 100%;
     display: flex;
 }
+
 .hamburger {
     display: none;
     position: fixed;
@@ -204,12 +210,13 @@ body {
     border: black solid 1px;
     background: white;
     cursor: pointer;
-  }
-  .closeIcon {
-    display: none;
-  }
+}
 
-  .menu {
+.closeIcon {
+    display: none;
+}
+
+.menu {
     position: fixed;
     transform: translateY(-100%);
     transition: transform 0.5s;
@@ -222,30 +229,37 @@ body {
     color: white;
     list-style: none;
     padding-top: 4rem;
-  }
-  .menuItem{
-      font-size: 2em;
-    }
-    .menu li{
-        width: 100%;
-        text-align: center;
-    }
-    /* UBACITI U CSS POSLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  .showMenu {
+}
+
+.menuItem {
+    font-size: 2em;
+}
+
+.menu li {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* UBACITI U CSS POSLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.showMenu {
     transform: translateY(0);
-  } 
-  .menuIcon{
-      width: 60px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      font-size: 1.2em;
-      background-color: black;
-  }
-  .closeIcon{
+}
+
+.menuIcon {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+}
+
+.closeIcon {
     width: 20px;
     height: 20px;
     display: flex;
@@ -255,11 +269,14 @@ body {
     color: white;
     font-size: 1.2em;
     background-color: black;
-  }
+}
 
 
 /* slider */
+
+
 /* Slideshow container */
+
 .slajder {
     grid-area: slajder;
     width: 100%;
@@ -274,7 +291,6 @@ body {
     position: relative;
     margin: auto;
     height: 100%;
-
 }
 
 .mySlides {
@@ -286,7 +302,9 @@ body {
     height: 100%;
 }
 
+
 /* text box */
+
 .divTrecina {
     position: absolute;
     left: 0%;
@@ -326,7 +344,9 @@ body {
     padding: 5px;
 }
 
+
 /* Next & previous buttons */
+
 .prev,
 .next {
     cursor: pointer;
@@ -347,19 +367,25 @@ body {
     justify-content: center;
 }
 
+
 /* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
     background-color: var(--hover);
 }
 
+
 /* Fading animation */
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -372,7 +398,6 @@ body {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -382,13 +407,14 @@ body {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
 }
 
+
 /*Treci deo*/
+
 .divNudimo {
     background-color: #302828;
     grid-area: offer;
@@ -435,7 +461,6 @@ body {
     justify-content: center;
     flex-direction: column;
     padding-left: 5%;
-
 }
 
 .boxText h2 {
@@ -466,7 +491,9 @@ body {
     width: 27px;
 }
 
+
 /* Usluge */
+
 .usluge {
     grid-area: products;
     background-image: url(../img/CustomMeso.png);
@@ -528,7 +555,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 .boxUsluge h3 {
     color: white;
     font-size: 2em;
@@ -544,7 +570,9 @@ body {
     font-size: 1.2em;
 }
 
+
 /* footer */
+
 .footer {
     background-color: #302828;
     width: 100%;
@@ -556,17 +584,16 @@ body {
     flex-direction: column;
 }
 
-
 .footerBox {
     width: 40%;
-      background-color: var(--redcolor);
+    background-color: var(--redcolor);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 30px;
-    padding:30px 10px 30px 10px;
+    padding: 30px 10px 30px 10px;
 }
 
 .drugaC {
@@ -606,7 +633,6 @@ body {
 
 .socialFooter img {
     width: 40px;
-
 }
 
 .drugaC p a {
@@ -622,8 +648,6 @@ body {
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-
-
 }
 
 .linija {
@@ -668,15 +692,14 @@ a {
     justify-content: center;
 }
 
+
 /* --------------------PROIZVODI------------------- */
 
 .proizvodi {
     width: 100%;
     display: grid;
-    grid-template-areas: "naslov"
-        "listaProizvoda";
+    grid-template-areas: "naslov" "listaProizvoda";
     padding: 50px;
-
     background-image: url(../img/CustomMeso.png);
     background-repeat: repeat;
 }
@@ -689,7 +712,6 @@ a {
     justify-content: center;
     padding: 20px;
     margin-bottom: 20px;
-
 }
 
 .itemsNaslov h4 {
@@ -714,7 +736,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .lista {
@@ -741,7 +762,6 @@ a {
 
 .naslovListe h6 {
     font-size: 2em;
-
 }
 
 .elementListe {
@@ -757,7 +777,6 @@ a {
 .elementCena {
     font-size: 1.3em;
     font-weight: 550;
-
 }
 
 .elementListe:last-child {
@@ -816,146 +835,148 @@ a {
     width: 100%;
 }
 
+
 /*------------------------ media queries--------------------------------*/
+
+
 /* Laptop L */
-@media screen and (max-width: 1440px){
+
+@media screen and (max-width: 1440px) {
     .boxUsluge {
         height: 350px;
     }
-    .drugaC{
+    .drugaC {
         width: 100%;
         justify-content: space-evenly;
     }
-
-    .drugaC p{
+    .drugaC p {
         font-size: 1em;
         text-align: center;
     }
     /* proizvodi stranica */
-    .itemsNaslov{
+    .itemsNaslov {
         font-size: 0.7em;
     }
-    .lista{
+    .lista {
         width: 60%;
     }
 }
+
+
 /* laptop */
+
 @media screen and (max-width: 1024px) {
-    .boxSlika{
+    .boxSlika {
         display: none;
     }
-    .boxText img{
+    .boxText img {
         margin-right: 20px;
     }
-    
     .naslovUsluge {
         font-size: 1em;
     }
-
     .boxUsluge {
         height: 300px;
     }
-
     .boxUsluge h3 {
         font-size: 1.5em;
     }
-
     .boxUsluge img {
         max-width: 70px;
     }
-
     .boxUsluge p {
         font-size: 1em;
     }
-    .drugaC{
+    .drugaC {
         width: 100%;
         justify-content: space-evenly;
     }
-    .drugaC p{
+    .drugaC p {
         font-size: 1em;
         text-align: center;
     }
-    .itemsNaslov{
+    .itemsNaslov {
         font-size: 0.5em;
     }
-    .lista{
+    .lista {
         width: 70%;
     }
 }
 
+
 /* tablet */
+
 @media screen and (max-width: 768px) {
-    .boxText h2{
+    .boxText h2 {
         font-size: 2em;
-        
     }
     .boxUsluge {
         height: 280px;
         width: 30%;
         margin: 5%;
     }
-    .rights p{
+    .rights p {
         text-align: center;
     }
-    .itemsNaslov{
+    .itemsNaslov {
         font-size: 0.6em;
     }
-    .lista{
+    .lista {
         width: 80%;
     }
-
 }
 
+
 /* mobile L */
+
 @media screen and (max-width: 425px) {
-    .divGlavni{
+    .divGlavni {
         display: none;
     }
-    #navbar{
+    #navbar {
         display: none;
     }
-    #hamburgerMenu{
+    #hamburgerMenu {
         display: block;
     }
-    .hamburger{
+    .hamburger {
         display: block;
     }
-    .slajder{
+    .slajder {
         height: 100vh;
     }
     .divTrecina {
         width: 100%;
     }
-    .divNudimo{
+    .divNudimo {
         height: 50vh;
     }
-    .naseUsluge{
+    .naseUsluge {
         margin-top: 80px;
     }
-    .naslovUsluge{
+    .naslovUsluge {
         font-size: 0.6em;
     }
-    .divBox{
+    .divBox {
         height: 70%;
         width: 90%;
     }
-    .boxp1{
+    .boxp1 {
         font-size: 1.2em;
     }
-    .boxp2{
+    .boxp2 {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
-    .boxp2{
+    .boxp2 {
         font-size: 1.2em;
     }
-    .boxp2 img{
+    .boxp2 img {
         max-width: 30px;
     }
-    .boxText h2{
+    .boxText h2 {
         font-size: 1.2em;
     }
     .boxUsluge {
@@ -963,28 +984,28 @@ a {
         width: 80%;
         margin: 5%;
     }
-    .footerBox{
+    .footerBox {
         width: 90%;
     }
-    .dnoFooter{
+    .dnoFooter {
         margin: 10px;
     }
-    .itemsNaslov{
+    .itemsNaslov {
         font-size: 0.5em;
     }
-    .lista{
+    .lista {
         width: 100%;
     }
-    .elementNaziv{
+    .elementNaziv {
         font-size: 1em;
     }
-    .elementCena{
+    .elementCena {
         font-size: 1em;
     }
-    .naslovListe{
+    .naslovListe {
         text-align: center;
     }
-    .drugaC p{
+    .drugaC p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -992,10 +1013,12 @@ a {
     }
 }
 
+
 /* mobile M */
+
 @media screen and (max-width: 375px) {}
 
+
 /* mobile S */
-@media screen and (max-width: 320px) {
-    
-}
+
+@media screen and (max-width: 320px) {}
