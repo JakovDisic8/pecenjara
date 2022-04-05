@@ -425,7 +425,7 @@ function ispisiArtikleLepinje(nizArtikalaLepinje){
   nizArtikalaLepinje.forEach((element)=>{
     ispisLepinje+=`<div class="elementListe" id="elemnetListeSvinjetina">
     <div class="elementNaziv">${element.imeProizvoda}</div>
-    <div class="elementCena">kg/ ${element.cenaProizvoda} rsd</div>
+    <div class="elementCena">kom/ ${element.cenaProizvoda} rsd</div>
      </div>
     `;
   });

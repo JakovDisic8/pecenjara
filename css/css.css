@@ -996,4 +996,6 @@ a {
 @media screen and (max-width: 375px) {}
 
 /* mobile S */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    
+}
